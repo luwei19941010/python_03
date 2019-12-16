@@ -148,6 +148,7 @@ print('------>',new_user,'<-----')
 替换str中的字符，格式replace(old-str , new-str,count),count为从左往右替换几个，默认全部替换
 
 ```
+message='替换str中的字符,格式replace(old-str , new-str,count),count为从左往右替换几个,默认全部替换'
 message=input('请说话：')
 print(message)
 data=message.replace('你妹','***',3)
@@ -162,12 +163,62 @@ print(data)
 将str按一定规则，切割为列表格式，rsplit( ) , lsplit
 
 ```
-message='替换str中的字符,格式replace(old-str , new-str,count),count为从左往右替换几个,默认全部替换'
 data=message.split(',')     #以‘，’进行切割
 #data=message.split(',',1)  #以‘，’进行切割一次
 #data=message.rsplit(',',1)  从右开始按‘，’切割，1次。
 #data=message.lstrip(',',1)  从左开始按‘，’切割，1次。
 print(data)
+```
+
+
+
+###### 7..startswith()/endswith()
+
+```
+name='luwei'
+#判断是否已lu开头
+flag=name.startswith('lu')
+print(flag)
+#判断是否已ei结束
+flag1=name.endswith('ei')
+print(flag1)
+```
+
+
+
+###### 8..format( )
+
+字符串格式化
+
+```
+name='我叫{0}，年龄：{1}'.format('oldboy',73)
+print(name)
+```
+
+
+
+###### 9..encode
+
+
+
+```
+name='陆威'#解释器读取到内存后，按照unicode编码存储：8个字节
+v1=name.encode('utf-8')
+print(v1)
+v2=name.encode('gbk')
+print(v2)
+```
+
+
+
+###### 10..jion
+
+字符串拼接
+
+```
+name='luwei' #l_u_w_e_i
+result='_'.join(name)#循环每个元素，并在元素和元素直接加入连接符
+print(result)
 ```
 
 
@@ -233,7 +284,24 @@ while True:
 
 
 
+###### 步长
 
+```
+name='luweiluwei'
+val=name[0:-1:2]#格式name[x:y:z] z为步长值可以为负，表示从左
+val1=name[-1:0:-1]
+print(val1)
+```
+
+
+
+### 作业
+
+1.思维导图
+
+2.笔记
+
+3.作业提交
 
 
 
