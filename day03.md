@@ -295,6 +295,30 @@ print(val1)
 
 
 
+###### for 循环
+
+```
+name ='luwei'
+for item in name:
+	print(item)
+	
+--->l
+--->u
+--->w
+--->e
+--->i
+```
+
+
+
+range （0，10）
+
+```
+for i in range(0,10)
+```
+
+
+
 ### 作业
 
 1.思维导图
