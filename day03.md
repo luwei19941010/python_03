@@ -219,6 +219,7 @@ print(v2)
 name='luwei' #l_u_w_e_i
 result='_'.join(name)#循环每个元素，并在元素和元素直接加入连接符
 print(result)
+'XX'.jion([元素必须是字符串])
 ```
 
 
@@ -311,10 +312,14 @@ for item in name:
 
 
 
-range （0，10）
+###### range （10,0,-1）
 
 ```
-for i in range(0,10)
+value=[]
+for i in range(10,0,-1):
+    value.append(i)
+print(value)
+--> [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 ```
 
 
